@@ -158,6 +158,10 @@ body{
     overflow-y: scroll;
 }
 
+.content2::-webkit-scrollbar{
+    display: none;
+}
+
 .content2>pre{
     font-size: 40px;
     position: relative;
