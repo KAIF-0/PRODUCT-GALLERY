@@ -42,8 +42,9 @@ popupBtn.addEventListener("click", ()=>{
     document.body.appendChild(popup)
 
 })
-// let clokser = document.getElementsByClassName("popup")
-// function closePop (){
-   
-//     clokser.classList.add("popup2")
-// }
+
+
+
+
+
+
