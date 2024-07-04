@@ -1,0 +1,82 @@
+.example {
+    background-image: url("image.png");
+    /* Set the height */
+    height: 400px;
+   /* Create a parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .example {
+        background-attachment: scroll;
+   }
+}
+
+.wrapper {
+
+	height: 100vh;
+    overflow-x: hidden;
+
+    /* Enable scrolling on the page. */
+    
+    overflow-y: auto;
+    perspective: 2px;
+
+}
+
+.section {
+    position: relative;
+    height: 100vh;
+
+    /* For text formatting. */
+    
+    display: flex;
+    
+    align-items: center;
+    
+    justify-content: center;
+    
+    color: blue;
+    
+    text-shadow: 0 0 5px #666;
+    
+    }
+    
+    .parallax::after {
+        content: " ";
+
+        position: absolute;
+        
+        top: 0;
+        
+        right: 0;
+        
+        bottom: 0;
+        
+        left: 0;
+        transform: translateZ(-1px) scale(1.5);
+        background-size: 100%;
+        z-index: -1;
+
+    }
+    
+    .static {
+    
+        background: lightblue;
+    
+    }
+    .img1::after {
+
+        background-image: url('image1.jpg');
+    
+    }
+    
+    .img2::after {
+    
+        background-image: url('image2.jpg');
+    
+    }
+                        
